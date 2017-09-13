@@ -50,7 +50,7 @@ def check_messages(client, nick):
 @smokesignal.on('user_joined')
 def user_joined(client, user, channel):
 
-    check_messages(client, nick)
+    check_messages(client, user)
 
 @smokesignal.on('user_rename')
 def user_rename(client, oldname, newname):
