@@ -21,6 +21,8 @@ def mail(client, channel, nick, message, cmd, args):
         'channel': channel,
     })
 
+    client.msg(channel, 'message sent!')
+
 def check_messages(client, nick):
     """
     Check for messages, output if any.
