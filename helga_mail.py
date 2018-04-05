@@ -4,7 +4,7 @@ from helga.db import db
 from helga.plugins import command
 
 
-@command('mail', help='send message to offline user, usage: mail <nick> <message>')
+@command('mail', help='send message to offline user, usage: mail <nick> <message>', aliases=['email'])
 def mail(client, channel, nick, message, cmd, args):
 
     if len(args) < 2:
